@@ -1,257 +1,131 @@
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:600px ) {
 	
 html, body {
 	background-color: white;
 	
 }
 
-p {
-	page-break-before:auto;
-}
 
-.container {
-	display: flex ;
-	border-bottom: 2px solid #C0C0C0 ;
-	border-bottom-width: thin;
-	
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-		
+
+
+
+ .fixed-nav-bar {
 	
 	position: fixed;
 	
 	top: 0;
 	left: 0;
 	
-	height: 17%;
+	height: 17px;
 	
 	width: 100%;
 	
-	text-align: center;
-	 z-index: 9999;
-	 background-color: white;
-
-}
-.container  > div {
-	padding:10px;
- text-align: center;
- font-size: 2em;
- color: #ffedad;
-
- 
- 
- 
-}
-
-.boris {
+	z-index:9999;
 	
-	margin-left: auto;
-	flex: 1 5 1;
-}
-
-.container > .boris > img {
-	width: 90;
-	height: 70;
-	border-bottom: 2px solid red;
-	border-top: 2px solid red;
-	border-left: 2px solid red;
-	border-right: 2px solid red;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-.austin {
-	font-size: 60%;
-	color: black;
-	font-style: bold;
-	font-family: "Times New Roman", Times, serif;
-	
-}
-.by {
-	font-size: 60%;
-	color: black;
-	
-
-}
-.name {
-	font-size: 60%;
-	color: #FF6347;
-	
-}
-
-.trump {
-	position: relative;
-	 top: 200;
-	width: 95%;
-	height: 130%;
-	background-color: #EE82EE;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-
-	
-	
-	
-}
-.trump  > .ziza {
-	padding: 10px;
-	width: 45%;
-	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-.trump > .eze {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-
-.trump > .onyi  {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	font-size: 7px;
-	
-}
-
- .trump > .benefit  {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-}
-
-
-
-.trump > .image-grid  {
-	
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
+	padding: 5px;
 	
 	
 }
 
-.trump > .image-grid > img  {
-	width: 50;
-	height:50;
-}
-
-.trump > .perfect  {
-	
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: 18%;
-	
-}
-
-.trump > .image-gallery  {
-	
-	padding: 10px;
-	
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: #483D8B; 
-
-height: auto;
-	
-	
-}
-
-.trump > .image-gallery > img {
-	padding: 7px;
-	margin:  0 0;
-	width: 30;
-	height: 30;
-	
-}
-.trump > .image-gallery > img:hover {
-	opacity: 0.5;
-}
-
-
-.ziza , .eze , .onyi, .benefit, .benefit2, .image-grid, .perfect, .image-gallery {
-	position: relative;
-	
-	margin-right: 30%;
-}
-
-.trump > .ziza  > div {
-	padding:4px;
- 
- font-size: 30%;
- 
-
- 
- 
-}
-.ziza > div >  a {
-text-decoration: none;
-padding: 0px;
-}
-
-.ziza > div > a > img {
-	width: 10;
-	height: 10;
-}
-
-
-
-.trump > .eze > .grow {
+.fixed-nav-bar  > a {
 	font-size: 10px;
+	text-decoration: none;
+	padding:10px;
+}
+
+
+ .fixed-nav-bar > .header > a > img {
+	 left: 0;
+width:10;
+height:15;
+ }
+
+
+
+
+
+.grid-container {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto  ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+
+	
+}
+
+
+.grid-container2 {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto auto auto auto ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container2 > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+font-size: 30px;
+	
+}
+
+
+.grid-item-1 {
+
+grid-column-start:1;
+grid-column-end: 3;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+}
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+ .grow {
+	font-size: 18px;
 	align-self: flex-start;
 	color: blue;
 	text-align:center;
 	
 }
 
-.trump > .eze > img {
-	width: 70;
-	height: 80;
-}
+
 .free {
 	text-decoration: none;
 	color: black;
 		
-	font-size: 8px;
+	font-size: 10px;
 	border: 1px solid #00FF7F;
-	padding: 0.5em 1.5em;
+	padding: 0.9em 1.8em;
 	
 	
 	
@@ -259,10 +133,10 @@ padding: 0px;
 
 .premium {
 	text-decoration: none;
-		font-size:8px;
+		font-size:10px;
 	color: white;
 	background-color:#00FF7F ;
-	padding: 0.5em 1.5em;
+	padding: 0.9em 1.8em;
 		border: 1px solid #00FF7F;
 	
 }
@@ -270,11 +144,67 @@ padding: 0px;
 .pos {
 	color: red;
 }
-.eze1 {
+.pos2 {
 	color: black;
-	font-size: 10px;
+	font-size: 15px;
 }
 
+
+.grid-item-2 {
+	
+	
+	grid-column-start:3;
+grid-column-end: 5 ;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+	
+}
+
+.grid-item-2 > img {
+	width: 100%;
+	height: 100%;
+}
+
+.top-container {
+	display: grid;
+	background-color: #ccffff;
+	grid-gap: 18px;
+	font-size: 13px;
+	grid-template-areas: 'first second third fourth fifth sixth seventh';
+}
+
+
+.item-3 {
+	grid-area: first;
+}
+
+.item-4 {
+	grid-area: second;
+}
+
+.item-5 {
+	grid-area: third;
+}
+
+.item-6 {
+	grid-area: fourth;
+}
+
+.item-7 {
+	grid-area: fifth;
+}
+
+.item-8{
+	grid-area: sixth;
+}
+
+.item-9 {
+	grid-area: seventh;
+}
 
 
 .join {
@@ -318,13 +248,13 @@ padding: 0px;
 }
 .ben {
 	color: red;
-	font-size: large;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .point {
 	color: blue;
-	font-size: large;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
@@ -335,1468 +265,43 @@ padding: 0px;
 }
 .soft {
 	color: #00008B;
-	font-size: 8px;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .retail {
 	color: red;
-	font-size: 130%;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .soft1 {
-	font-size: xx-small;
+	font-size:13px;
 	color: #00008B;
 	font-family: "Times New Roman", Times, serif;
 }
 
+
+.image-grid-1 {
+	padding: 10px;
+}
  
-
-.trump > .genny {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 0;
-	right:37;
-}
-.trump > .genny > img {
-	width: 55;
-	height: 100;
-}
-
-.trump > .dennis {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 135;
-	right:37;
-}
-.trump > .dennis > img {
-	width: 20;
-	height: 20;
-}
-
-.trump > .dennis > center >  a > img {
-	width:15;
-	height:15;
-}
-
-.trump > .igwe {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top:350;
-	right:37;
-}
-.trump > .igwe > img {
-	width: 50;
-	height:100;
-}
-
-
-.trump > .palace {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 480;
-	right:37;
-}
-.trump > .palace > img {
-	width: 50;
-	height:70;
-}
-
-.trump > .device {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 605;
-	right:37;
-}
-
-.trump > .device > a > img {
-	width: 100;
-	height:80;
-}
-
-
-.work {
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size:8px;
-}
-.work2 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-}
-.work3 {
-	font-size: 5px;
-	font-family: "Times New Roman", Times, serif;
-	font-style: normal;
-}
-
-.work4 {
-	font-size: 5px;
-	font-family: "Times New Roman", Times, serif;
-}
-.work5 {
-	font-size: xx-small;
-	color: #00FF7F;
-	text-decoration:underline;
-}
-
-.best{
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size: 7px;
-}
-.best1 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-	font-size: 7px;
-}
-
-.best2 {
-	font-size: 7px;
-	font-family: "Times New Roman", Times, serif;
-}
-.best3 {
-	font-size: 5px;;
-}
-.best4 {
-	color: #00FF7F;
-}
-
-.pres {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: 7px;
-}
-.pres2 {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 7px;
-}
-.pres3 {
-	font-size: 7px;
-	color: #2F4F4F;
-}
-.pres4 {
-	text-decoration: underline;
-	font-size: 8px;
-}
-
-.pa {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 8px;
-}
-
-.pa1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size:8px;
-}
-
-.pa2 {
-	
-	font-size: 6px;
-	font-family: "Times New Roman", Times, serif;
-	color: black;
-	}
-
-.pa4{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-.pa5{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-.pa6{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-	
-
-.dev {
-	font-family: "Arial Black", Times, serif;
-	font-size: small;
-	color: blue;
-}
-.dev1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: small;
-}
-
-.dev2 {
-	
-	font-size: xx-small;
-	font-family: "Times New Roman", Times, serif;
-	color: #2F4F4F;;
-	}
-	
-
-
-
-}
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 601px) {
-	
-html, body {
-	background-color: white;
-	
-}
-
-.container {
-	display: flex ;
-	border-bottom: 2px solid #C0C0C0 ;
-	border-bottom-width: thin;
-	
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-		
-	
-	position: fixed;
-	
-	top: 0;
-	left: 0;
-	
-	height: 17%;
-	
-	width: 100%;
-	
-	text-align: center;
-	 z-index: 9999;
-	 background-color: white;
-
-}
-.container  > div {
-	padding:10px;
- text-align: center;
- font-size: 2em;
- color: #ffedad;
-
- 
- 
- 
-}
-
-.boris {
-	
-	margin-left: auto;
-	flex: 1 5 1;
-}
-
-.container > .boris > img {
-	width: 90;
-	height: 70;
-	border-bottom: 2px solid red;
-	border-top: 2px solid red;
-	border-left: 2px solid red;
-	border-right: 2px solid red;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-.austin {
-	font-size: 60%;
-	color: black;
-	font-style: bold;
-	font-family: "Times New Roman", Times, serif;
-	
-}
-.by {
-	font-size: 60%;
-	color: black;
-	
-
-}
-.name {
-	font-size: 60%;
-	color: #FF6347;
-	
-}
-
-.trump {
-	position: relative;
-	 top: 200;
-	width: 95%;
-	height: 130%;
-	background-color: #EE82EE;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-
-	
-	
-	
-}
-.trump  > .ziza {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-.trump > .eze {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-
-.trump > .onyi  {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	font-size: 7px;
-	
-}
-
- .trump > .benefit  {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-}
-
-
-
-.trump > .image-grid  {
-	
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-}
-
-.trump > .image-grid > img  {
-	width: 50;
-	height:50;
-}
-
-.trump > .perfect  {
-	
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: 19%;
-	
-}
-
-.trump > .image-gallery  {
-	
-	padding: 10px;
-	
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: #483D8B; 
-
-
-height: auto;
-	
-	
-}
-
-.trump > .image-gallery > img {
-	padding: 7px;
-	margin:  0 0;
-	width: 30;
-	height: 30;
-	
-}
-.trump > .image-gallery > img:hover {
-	opacity: 0.5;
-}
-
-
-.ziza , .eze , .onyi, .benefit, .benefit2, .image-grid, .perfect, .image-gallery {
-	position: relative;
-	
-	margin-right: 30%;
-}
-
-.trump > .ziza  > div {
-	padding:4px;
- 
- font-size: 30%;
- 
-
- 
- 
-}
-.ziza > div >  a {
-text-decoration: none;
-padding: 0px;
-}
-
-.ziza > div > a > img {
-	width: 10;
-	height: 10;
-}
-
-
-
-.trump > .eze > .grow {
-	font-size: 10px;
-	align-self: flex-start;
-	color: blue;
-	text-align:center;
-	
-}
-
-.trump > .eze > img {
-	width: 70;
+.image-grid-1 > img {
 	height: 80;
+	width: 120;
 }
-.free {
-	text-decoration: none;
-	color: black;
-		
-	font-size: 8px;
-	border: 1px solid #00FF7F;
-	padding: 0.5em 1.5em;
+
+.image-gallery-1 {
 	
-	
-	
+	background-color: #483D8B;
 }
 
-.premium {
-	text-decoration: none;
-		font-size:8px;
-	color: white;
-	background-color:#00FF7F ;
-	padding: 0.5em 1.5em;
-		border: 1px solid #00FF7F;
-	
-}
-
-.pos {
-	color: red;
-}
-.eze1 {
-	color: black;
-	font-size: 10px;
-}
-
-
-
-.join {
-	margin-right: 115;
-}
-
-.smile {
-	font-family: "Segoe Script", Times, serif;
-}
-.natural {
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.bistro {
-	font-family: "Castellar", Times, serif;
-	font-style: bold;
-}
-
-.hipster {
-	font-family: "Lucida Handwriting", Times, serif;
-	font-style: bold;
-}
-.iconic {
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.violet {
-	font-family: "Times New Roman", Times, serif;
-	font-style: bold;
-	border: 2px solid #483D8B;
-	padding: 0.2em 0.2em;
-}
-.underline {
-	text-decoration: underline;
-}
-
-.travel {
-	font-family: "Segoe Script", Times, serif;
-	
-	
-}
-.ben {
-	color: red;
-	font-size: large;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.point {
-	color: blue;
-	font-size: large;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.gurantee {
-	color: blue;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 10px;
-}
-.soft {
-	color: #00008B;
-	font-size: 8px;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.retail {
-	color: red;
-	font-size: 130%;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.soft1 {
-	font-size: xx-small;
-	color: #00008B;
-	font-family: "Times New Roman", Times, serif;
-}
-
- 
-
-.trump > .genny {
-	
+.image-gallery-1 > img {
 	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 0;
-	right:37;
-}
-.trump > .genny > img {
-	width: 55;
-	height: 100;
-}
-
-.trump > .dennis {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 135;
-	right:37;
-}
-.trump > .dennis > img {
-	width: 80;
-	height: 130;
-}
-
-.trump > .dennis > center >  a > img {
-	width:25;
-	height:20;
-}
-
-.trump > .igwe {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top:350;
-	right:37;
-}
-.trump > .igwe > img {
-	width: 80;
-	height:100;
-}
-
-
-.trump > .palace {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 480;
-	right:37;
-}
-.trump > .palace > img {
-	width: 50;
-	height:70;
-}
-
-.trump > .device {
-	
-	padding: 10px;
-	width: 30%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 605;
-	right:37;
-}
-
-.trump > .device > a > img {
-	width: 170;
-	height:80;
-}
-
-
-.work {
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size:8px;
-}
-.work2 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-}
-.work3 {
-	font-size: 5px;
-	font-family: "Times New Roman", Times, serif;
-	font-style: normal;
-}
-
-.work4 {
-	font-size: 5px;
-	font-family: "Times New Roman", Times, serif;
-}
-.work5 {
-	font-size: xx-small;
-	color: #00FF7F;
-	text-decoration:underline;
-}
-
-.best{
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size: 8px;
-}
-.best1 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-	font-size: 8px;
-}
-
-.best2 {
-	font-size: 7px;
-	font-family: "Times New Roman", Times, serif;
-}
-.best3 {
-	font-size: 7px;;
-}
-.best4 {
-	color: #00FF7F;
-}
-
-.pres {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: 7px;
-}
-.pres2 {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 7px;
-}
-.pres3 {
-	font-size: 7px;
-	color: #2F4F4F;
-}
-.pres4 {
-	text-decoration: underline;
-	font-size: 8px;
-}
-
-.pa {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 8px;
-}
-
-.pa1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size:8px;
-}
-
-.pa2 {
-	
-	font-size: 6px;
-	font-family: "Times New Roman", Times, serif;
-	color: black;
-	}
-
-.pa4{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 5px;
-	}
-
-.pa5{
-
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 5px;
-	}
-
-.pa6{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 5px;
-	}	
-
-.dev {
-	font-family: "Arial Black", Times, serif;
-	font-size: small;
-	color: blue;
-}
-.dev1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: small;
-}
-
-.dev2 {
-	
-	font-size: xx-small;
-	font-family: "Times New Roman", Times, serif;
-	color: #2F4F4F;;
-	}
-	
-
-
-
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width:800px ) {
-	
-html, body {
-	background-color: white;
-	
-}
-
-p {
-	page-break-before:auto;
-}
-
-.container {
-	display: flex ;
-	border-bottom: 2px solid #C0C0C0 ;
-	border-bottom-width: thin;
-	
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-		
-	
-	position: fixed;
-	
-	top: 0;
-	left: 0;
-	
-	height: 17%;
-	
-	width: 100%;
-	
-	text-align: center;
-	 z-index: 9999;
-	 background-color: white;
-
-}
-.container  > div {
-	padding:10px;
- text-align: center;
- font-size: 2em;
- color: #ffedad;
-
- 
- 
- 
-}
-
-.boris {
-	
-	margin-left: auto;
-	flex: 1 5 1;
-}
-
-.container > .boris > img {
-	width: 90;
-	height: 70;
-	border-bottom: 2px solid red;
-	border-top: 2px solid red;
-	border-left: 2px solid red;
-	border-right: 2px solid red;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-.austin {
-	font-size: 60%;
-	color: black;
-	font-style: bold;
-	font-family: "Times New Roman", Times, serif;
-	
-}
-.by {
-	font-size: 60%;
-	color: black;
-	
-
-}
-.name {
-	font-size: 60%;
-	color: #FF6347;
-	
-}
-
-.trump {
-	position: relative;
-	 top: 200;
-	width: 95%;
-	height: 110%;
-	background-color: #EE82EE;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-
-	
-	
-	
-}
-.trump  > .ziza {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-.trump > .eze {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-
-.trump > .onyi  {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	font-size: 7px;
-	
-}
-
- .trump > .benefit  {
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-}
-
-
-
-.trump > .image-grid  {
-	
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-}
-
-.trump > .image-grid > img  {
-	width: 50;
-	height:50;
-}
-
-.trump > .perfect  {
-	
-	padding: 10px;
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: 18%;
-	
-}
-
-.trump > .image-gallery  {
-	
-	padding: 10px;
-	
-	width: 45%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: #483D8B; 
-
-height: auto;
-	
-	
-}
-
-.trump > .image-gallery > img {
-	padding: 7px;
-	margin:  0 0;
 	width: 50;
 	height: 50;
-	
-}
-.trump > .image-gallery > img:hover {
-	opacity: 0.5;
 }
 
-
-.ziza , .eze , .onyi, .benefit, .benefit2, .image-grid, .perfect, .image-gallery {
-	position: relative;
-	
-	margin-right: 30%;
-}
-
-.trump > .ziza  > div {
-	padding:4px;
- 
- font-size: 30%;
- 
-
- 
- 
-}
-.ziza > div >  a {
-text-decoration: none;
-padding: 0px;
-}
-
-.ziza > div > a > img {
-	width: 10;
-	height: 10;
-}
-
-
-
-.trump > .eze > .grow {
-	font-size: 10px;
-	align-self: flex-start;
-	color: blue;
-	text-align:center;
-	
-}
-
-.trump > .eze > img {
-	width: 70;
-	height: 80;
-}
-.free {
-	text-decoration: none;
-	color: black;
-		
-	font-size: 8px;
-	border: 1px solid #00FF7F;
-	padding: 0.5em 1.5em;
-	
-	
-	
-}
-
-.premium {
-	text-decoration: none;
-		font-size:8px;
-	color: white;
-	background-color:#00FF7F ;
-	padding: 0.5em 1.5em;
-		border: 1px solid #00FF7F;
-	
-}
-
-.pos {
-	color: red;
-}
-.eze1 {
-	color: black;
-	font-size: 10px;
-}
-
-
-
-.join {
-	margin-right: 115;
-}
-
-.smile {
-	font-family: "Segoe Script", Times, serif;
-}
-.natural {
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.bistro {
-	font-family: "Castellar", Times, serif;
-	font-style: bold;
-}
-
-.hipster {
-	font-family: "Lucida Handwriting", Times, serif;
-	font-style: bold;
-}
-.iconic {
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.violet {
-	font-family: "Times New Roman", Times, serif;
-	font-style: bold;
-	border: 2px solid #483D8B;
-	padding: 0.2em 0.2em;
-}
-.underline {
-	text-decoration: underline;
-}
-
-.travel {
-	font-family: "Segoe Script", Times, serif;
-	
-	
-}
-.ben {
-	color: red;
-	font-size: x-large;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.point {
-	color: blue;
-	font-size: x-large;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.gurantee {
-	color: blue;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 12px;
-}
-.soft {
-	color: #00008B;
-	font-size: 8px;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.retail {
-	color: red;
-	font-size: 130%;
-	font-family: "Arial Black", Times, serif;
-	font-style: bold;
-}
-.soft1 {
-	font-size: xx-small;
-	color: #00008B;
-	font-family: "Times New Roman", Times, serif;
-}
-
- 
-
-.trump > .genny {
-	
-	padding: 10px;
-	width: 33%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 0;
-	right:37;
-}
-.trump > .genny > img {
-	width: 80;
-	height: 100;
-}
-
-.trump > .dennis {
-	
-	padding: 10px;
-	width: 33%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 135;
-	right:37;
-}
-.trump > .dennis > img {
-	width: 120;
-	height: 100;
-}
-
-.trump > .dennis > center >  a > img {
-	width:30;
-	height:25;
-	
-}
-
-.trump > .igwe {
-	
-	padding: 10px;
-	width: 33%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top:350;
-	right:37;
-}
-.trump > .igwe > img {
-	width: 100;
-	height:120;
-}
-
-
-.trump > .palace {
-	
-	padding: 10px;
-	width: 33%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 480;
-	right:37;
-}
-.trump > .palace > img {
-	width: 80;
-	height:120;
-}
-
-.trump > .device {
-	
-	padding: 10px;
-	width: 33%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 605;
-	right:37;
-}
-
-.trump > .device > a > img {
-	width: 220;
-	height:80;
-}
-
-
-.work {
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size:8px;
-}
-.work2 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-}
-.work3 {
-	font-size: 7px;
-	font-family: "Times New Roman", Times, serif;
-	font-style: normal;
-}
-
-.work4 {
-	font-size: 7px;
-	font-family: "Times New Roman", Times, serif;
-}
-.work5 {
-	font-size: 10px;
-	color: #00FF7F;;
-	text-decoration:underline;
-}
-
-.best{
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size: 7px;
-}
-.best1 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-	font-size: 7px;
-}
-
-.best2 {
-	font-size: 7px;
-	font-family: "Times New Roman", Times, serif;
-}
-.best3 {
-	font-size: 6px;;
-}
-.best4 {
-	color: #00FF7F;
-}
-
-.pres {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: 10px;
-}
-.pres2 {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 10px;
-}
-.pres3 {
-	font-size: 7px;
-	color: #2F4F4F;
-}
-.pres4 {
-	text-decoration: underline;
-	font-size: 8px;
-}
-
-.pa {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 11px;
-}
-
-.pa1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size:11px;
-}
-
-.pa2 {
-	
-	font-size: 6px;
-	font-family: "Times New Roman", Times, serif;
-	color: black;
-	}
-	
-.palace > .pa3 {
-	display:none;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 3px;
-	
-	color: #2F4F4F;
-	padding: 40px;
-	
-	}
-
-.dev {
-	font-family: "Arial Black", Times, serif;
-	font-size: small;
-	color: blue;
-}
-.dev1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: small;
-}
-
-.dev2 {
-	
-	font-size: xx-small;
-	font-family: "Times New Roman", Times, serif;
-	color: #2F4F4F;;
-	}
-	
 
 
 
@@ -1804,14 +309,7 @@ padding: 0px;
 
 
 
-
-
-
-
-
-
-
-@media only screen and (min-width:1200px ) {
+@media only screen and (max-width:600px ) {
 	
 html, body {
 	background-color: white;
@@ -1821,231 +319,109 @@ html, body {
 
 
 
-.container {
-	display: flex ;
-	border-bottom: 2px solid #C0C0C0 ;
-	border-bottom-width: thin;
-	
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-		
+
+ .fixed-nav-bar {
 	
 	position: fixed;
 	
 	top: 0;
 	left: 0;
 	
-	height: 17%;
+	height: 17px;
 	
 	width: 100%;
 	
-	text-align: center;
-	 z-index: 9999;
-	 background-color: white;
-
-}
-.container  > div {
-	padding:10px;
- text-align: center;
- font-size: 2em;
- color: #ffedad;
-
- 
- 
- 
-}
-
-.boris {
+	z-index:9999;
 	
-	margin-left: auto;
-	flex: 1 5 1;
-}
-
-.container > .boris > img {
-	width: 90;
-	height: 70;
-	border-bottom: 2px solid red;
-	border-top: 2px solid red;
-	border-left: 2px solid red;
-	border-right: 2px solid red;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-.austin {
-	font-size: 60%;
-	color: black;
-	font-style: bold;
-	font-family: "Times New Roman", Times, serif;
-	
-}
-.by {
-	font-size: 60%;
-	color: black;
-	
-
-}
-.name {
-	font-size: 60%;
-	color: #FF6347;
-	
-}
-
-.trump {
-	position: relative;
-	 top: 200;
-	width: 95%;
-	height: 160%;
-	background-color: #EE82EE;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-
-	
-	
-	
-}
-.trump  > .ziza {
-	padding: 10px;
-	width: 50%;
-	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-.trump > .eze {
-	padding: 10px;
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-}
-
-.trump > .onyi  {
-	padding: 10px;
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	font-size: 12px;
-	
-}
-
- .trump > .benefit  {
-	padding: 10px;
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-}
-
-
-
-.trump > .image-grid  {
-	
-	padding: 10px;
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
+	padding: 5px;
 	
 	
 }
 
-.trump > .image-grid > img  {
-	width: 100;
-	height:80;
-}
-
-.trump > .perfect  {
-	
-	padding: 10px;
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: 25%;
-	
-}
-
-.trump > .image-gallery  {
-	
-	padding: 10px;
-	
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-background-color: #483D8B; 
-
-
-height: auto;
-	
-	
-}
-
-.trump > .image-gallery > img {
-	padding: 7px;
-	margin:  0 0;
-	width: 80;
-	height: 80;
-	
-}
-.trump > .image-gallery > img:hover {
-	opacity: 0.5;
+.fixed-nav-bar  > a {
+	font-size: 10px;
+	text-decoration: none;
+	padding:10px;
 }
 
 
-.ziza , .eze , .onyi, .benefit, .benefit2, .image-grid, .perfect, .image-gallery {
-	position: relative;
+ .fixed-nav-bar > .header > a > img {
+	 left: 0;
+width:10;
+height:15;
+ }
+
+
+
+
+
+.grid-container {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto  ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+
 	
-	margin-right: 30%;
 }
 
-.trump > .ziza  > div {
-	padding:4px;
- 
- font-size: 70%;
- 
+
+.grid-container2 {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto auto auto auto ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container2 > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+font-size: 30px;
+	
+}
+
+
+.grid-item-1 {
+
+grid-column-start:1;
+grid-column-end: 3;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+}
+
+
 
  
  
-}
-.ziza > div >  a {
-text-decoration: none;
-padding: 0px;
-}
-
-.ziza > div > a > img {
-	width: 15;
-	height: 15;
-}
 
 
 
-.trump > .eze > .grow {
+
+
+
+
+ .grow {
 	font-size: 18px;
 	align-self: flex-start;
 	color: blue;
@@ -2053,17 +429,14 @@ padding: 0px;
 	
 }
 
-.trump > .eze > img {
-	width: 130;
-	height: 150;
-}
+
 .free {
 	text-decoration: none;
 	color: black;
 		
-	font-size: 12px;
+	font-size: 10px;
 	border: 1px solid #00FF7F;
-	padding: 0.5em 1.5em;
+	padding: 0.9em 1.8em;
 	
 	
 	
@@ -2071,10 +444,10 @@ padding: 0px;
 
 .premium {
 	text-decoration: none;
-		font-size:12px;
+		font-size:10px;
 	color: white;
 	background-color:#00FF7F ;
-	padding: 0.5em 1.5em;
+	padding: 0.9em 1.8em;
 		border: 1px solid #00FF7F;
 	
 }
@@ -2082,11 +455,67 @@ padding: 0px;
 .pos {
 	color: red;
 }
-.eze1 {
+.pos2 {
 	color: black;
-	font-size: 12px;
+	font-size: 15px;
 }
 
+
+.grid-item-2 {
+	
+	
+	grid-column-start:3;
+grid-column-end: 5 ;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+	
+}
+
+.grid-item-2 > img {
+	width: 100%;
+	height: 100%;
+}
+
+.top-container {
+	display: grid;
+	
+	grid-gap: 18px;
+	font-size: 13px;
+	grid-template-areas: 'first second third fourth fifth sixth seventh';
+}
+
+
+.item-3 {
+	grid-area: first;
+}
+
+.item-4 {
+	grid-area: second;
+}
+
+.item-5 {
+	grid-area: third;
+}
+
+.item-6 {
+	grid-area: fourth;
+}
+
+.item-7 {
+	grid-area: fifth;
+}
+
+.item-8{
+	grid-area: sixth;
+}
+
+.item-9 {
+	grid-area: seventh;
+}
 
 
 .join {
@@ -2130,292 +559,401 @@ padding: 0px;
 }
 .ben {
 	color: red;
-	font-size: xx-large;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .point {
 	color: blue;
-	font-size: xx-large;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .gurantee {
 	color: blue;
 	font-family: "Times New Roman", Times, serif;
-	font-size: 15px;
+	font-size: 10px;
 }
 .soft {
 	color: #00008B;
-	font-size: 12px;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .retail {
 	color: red;
-	font-size: 12px;
+	font-size: 20px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .soft1 {
-	font-size:small;
+	font-size:13px;
 	color: #00008B;
 	font-family: "Times New Roman", Times, serif;
 }
 
+
+.image-grid-1 {
+	padding: 10px;
+}
+ 
+.image-grid-1 > img {
+	height: 80;
+	width: 120;
+}
+
+.image-gallery-1 {
+	
+	background-color: #483D8B;
+}
+
+.image-gallery-1 > img {
+	padding: 10px;
+	width: 50;
+	height: 50;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:601px ) {
+	
+html, body {
+	background-color: white;
+	
+}
+
+
+
+
+
+ .fixed-nav-bar {
+	
+	position: fixed;
+	
+	top: 0;
+	left: 0;
+	
+	height: 17px;
+	
+	width: 100%;
+	
+	z-index:9999;
+	
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 20px;
+	
+	
+}
+
+.fixed-nav-bar  > a {
+	font-size: 18px;
+	text-decoration: none;
+	padding:10px;
+}
+
+
+ .fixed-nav-bar > .header > a > img {
+	 left: 0;
+width:18;
+height:18;
+ }
+
+
+
+
+
+.grid-container {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto  ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+font-size: 30px;
+	
+}
+
+
+.grid-container2 {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto auto auto auto ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container2 > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+
+	
+}
+
+
+.grid-item-1 {
+
+grid-column-start:1;
+grid-column-end: 3;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+}
+
+
+
+ 
  
 
-.trump > .genny {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 0;
-	right:37;
-}
-.trump > .genny > img {
-	width: 120;
-	height: 180;
-}
-
-.trump > .dennis {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 210;
-	right:37;
-}
-.trump > .dennis > img {
-	width: 150;
-	height: 100;
-}
-
-.trump > .dennis > center >  a > img {
-	width:60;
-	height:25;
-	
-}
-
-.trump > .igwe {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top:445;
-	right:37;
-}
-.trump > .igwe > img {
-	width: 150;
-	height:120;
-}
 
 
-.trump > .palace {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 670;
-	right:37;
-}
-.trump > .palace > img {
-	width: 170;
-	height:150;
-}
-
-.trump > .device {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 975;
-	right:37;
-}
-
-.trump > .device > a > img {
-	width: 300;
-	height:150;
-}
 
 
-.work {
+
+
+ .grow {
+	font-size: 35px;
+	align-self: flex-start;
 	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size:15px;
-}
-.work2 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-}
-.work3 {
-	font-size: 9px;
-	font-family: "Times New Roman", Times, serif;
-	font-style: normal;
-}
-
-.work4 {
-	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;
-}
-.work5 {
-	font-size: 10px;
-	color: #00FF7F;;
-	text-decoration:underline;
-}
-
-.best{
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size: 15px;
-}
-.best1 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-	font-size: 15px;
-}
-
-.best2 {
-	font-size: 7px;
-	font-family: "Times New Roman", Times, serif;
-}
-.best3 {
-	font-size: 6px;;
-}
-.best4 {
-	color: #00FF7F;
-}
-
-.pres {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: 12px;
-}
-.pres2 {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 12px;
-}
-.pres3 {
-	font-size: 8px;
-	color: #2F4F4F;
-}
-.pres4 {
-	text-decoration: underline;
-	font-size: 8px;
-}
-
-.pa {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 18px;
-}
-
-.pa1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size:18px;
-}
-
-.pa2 {
+	text-align:center;
 	
-	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;
+}
+
+
+.free {
+	text-decoration: none;
 	color: black;
-	}
+		
+	font-size: 15px;
+	border: 1px solid #00FF7F;
+	padding: 0.9em 1.8em;
 	
- .pa4{
 	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
 	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-.pa5{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-.pa6{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-
-.dev {
-	font-family: "Arial Black", Times, serif;
-	font-size: large;
-	color: blue;
 }
-.dev1 {
-	font-family: "Arial Black", Times, serif;
+
+.premium {
+	text-decoration: none;
+		font-size:15px;
+	color: white;
+	background-color:#00FF7F ;
+	padding: 0.9em 1.8em;
+		border: 1px solid #00FF7F;
+	
+}
+
+.pos {
 	color: red;
-	font-size: large;
+}
+.pos2 {
+	color: black;
+	font-size: 15px;
 }
 
-.dev2 {
+
+.grid-item-2 {
 	
-	font-size: x-small;
+	
+	grid-column-start:3;
+grid-column-end: 5 ;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+	
+}
+
+.grid-item-2 > img {
+	width: 100%;
+	height: 100%;
+}
+
+.top-container {
+	display: grid;
+	
+	grid-gap: 18px;
+	font-size: 20px;
+	grid-template-areas: 'first second third fourth fifth sixth seventh';
+}
+
+
+.item-3 {
+	grid-area: first;
+}
+
+.item-4 {
+	grid-area: second;
+}
+
+.item-5 {
+	grid-area: third;
+}
+
+.item-6 {
+	grid-area: fourth;
+}
+
+.item-7 {
+	grid-area: fifth;
+}
+
+.item-8{
+	grid-area: sixth;
+}
+
+.item-9 {
+	grid-area: seventh;
+}
+
+
+.join {
+	margin-right: 115;
+}
+
+.smile {
+	font-family: "Segoe Script", Times, serif;
+}
+.natural {
+	font-family: "Arial Black", Times, serif;
+	font-style: bold;
+}
+.bistro {
+	font-family: "Castellar", Times, serif;
+	font-style: bold;
+}
+
+.hipster {
+	font-family: "Lucida Handwriting", Times, serif;
+	font-style: bold;
+}
+.iconic {
+	font-family: "Arial Black", Times, serif;
+	font-style: bold;
+}
+.violet {
 	font-family: "Times New Roman", Times, serif;
-	color: #2F4F4F;;
-	}
+	font-style: bold;
+	border: 2px solid #483D8B;
+	padding: 0.2em 0.2em;
+}
+.underline {
+	text-decoration: underline;
+}
+
+.travel {
+	font-family: "Segoe Script", Times, serif;
 	
+	
+}
+.ben {
+	color: red;
+	font-size: 30px;
+	font-family: "Arial Black", Times, serif;
+	font-style: bold;
+}
+.point {
+	color: blue;
+	font-size: 30px;
+	font-family: "Arial Black", Times, serif;
+	font-style: bold;
+}
+.gurantee {
+	color: blue;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+.soft {
+	color: #00008B;
+	font-size: 30px;
+	font-family: "Arial Black", Times, serif;
+	font-style: bold;
+}
+.retail {
+	color: red;
+	font-size: 30px;
+	font-family: "Arial Black", Times, serif;
+	font-style: bold;
+}
+.soft1 {
+	font-size:18px;
+	color: #00008B;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+.image-grid-1 {
+	padding: 10px;
+}
+ 
+.image-grid-1 > img {
+	height: 100;
+	width: 150;
+}
+
+.image-gallery-1 {
+	
+	background-color: #483D8B;
+}
+
+.image-gallery-1 > img {
+	padding: 7px;
+	width: 50;
+	height: 50;
+}
+
+
 
 
 
 }
-
-
 
 
 
@@ -2430,254 +968,124 @@ html, body {
 
 
 
-.container {
-	display: flex ;
-	border-bottom: 2px solid #C0C0C0 ;
-	border-bottom-width: thin;
-	
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-		
+
+ .fixed-nav-bar {
 	
 	position: fixed;
 	
 	top: 0;
 	left: 0;
 	
-	height: 17%;
+	height: 17px;
 	
 	width: 100%;
 	
-	text-align: center;
-	 z-index: 9999;
-	 background-color: white;
-
-}
-.container  > div {
-	padding:10px;
- text-align: center;
- font-size: 2em;
- color: #ffedad;
-
- 
- 
- 
-}
-
-.boris {
+	z-index:9999;
 	
-	margin-left: auto;
-	flex: 1 5 1;
-}
-
-.container > .boris > img {
-	width: 90;
-	height: 70;
-	border-bottom: 2px solid red;
-	border-top: 2px solid red;
-	border-left: 2px solid red;
-	border-right: 2px solid red;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-.austin {
-	font-size: 60%;
-	color: black;
-	font-style: bold;
-	font-family: "Times New Roman", Times, serif;
-	
-}
-.by {
-	font-size: 60%;
-	color: black;
-	
-
-}
-.name {
-	font-size: 60%;
-	color: #FF6347;
-	
-}
-
-.trump {
-	position: relative;
-	 top: 200;
-	width: 95%;
-	height: 180%;
-	background-color: #EE82EE;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-
-	
-	
-	
-}
-.trump  > .ziza {
-	padding: 10px;
-	width: 55%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	right: 30;
-}
-.trump > .eze {
-	padding: 10px;
-	width: 55%;
-	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	right: 30;
-}
-
-.trump > .onyi  {
-	padding: 10px;
-	width: 55%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	font-size: 17px;
-	right: 30;
+	padding: 20px;
+	
 	
 }
 
- .trump > .benefit  {
-	padding: 10px;
-	width: 55%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	right: 30;
-	
-}
-
-
-
-.trump > .image-grid  {
-	
-	padding: 10px;
-	width: 55%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	right: 30;
-	
-}
-
-.trump > .image-grid > img  {
-	width: 170;
-	height:90;
-}
-
-.trump > .perfect  {
-	
-	padding: 10px;
-	width: 55%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: 25%;
-	right: 30;
-	
-}
-
-.trump > .image-gallery  {
-	
-	padding: 10px;
-	
-	width: 55%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: #483D8B; 
-
-height: auto;
-	right: 30;
-	
-}
-
-.trump > .image-gallery > img {
-	padding: 15px;
-	margin:  0 0;
-	width: 120;
-	height: 100;
-	
-}
-.trump > .image-gallery > img:hover {
-	opacity: 0.5;
-}
-
-
-.ziza , .eze , .onyi, .benefit, .benefit2, .image-grid, .perfect, .image-gallery {
-	position: relative;
-	
-	margin-right: 30%;
-}
-
-.trump > .ziza  > div {
-	padding:4px;
- 
- font-size: 100%;
- 
-
- 
- 
-}
-.ziza > div >  a {
-text-decoration: none;
-padding: 0px;
-}
-
-.ziza > div > a > img {
-	width: 20;
-	height: 20;
-}
-
-
-
-.trump > .eze > .grow {
+.fixed-nav-bar  > a {
 	font-size: 25px;
+	text-decoration: none;
+	padding:40px;
+}
+
+
+ .fixed-nav-bar > .header > a > img {
+	 left: 0;
+width:50;
+height:35;
+ }
+
+
+
+
+
+.grid-container {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto  ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+font-size: 30px;
+	
+}
+
+
+.grid-container2 {
+
+display: grid;
+
+grid-template-columns : auto  auto auto auto auto auto auto ;
+grid-gap:5px;
+
+padding: 5px;
+
+}
+.grid-container2 > div {
+	background-color: rgba (255,255,255,0.8);
+
+text-align:center;
+padding : 20px 0;
+font-size: 30px;
+	
+}
+
+
+.grid-item-1 {
+
+grid-column-start:1;
+grid-column-end: 3;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+}
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+ .grow {
+	font-size: 40px;
 	align-self: flex-start;
 	color: blue;
 	text-align:center;
 	
 }
 
-.trump > .eze > img {
-	width: 230;
-	height: 180;
-}
+
 .free {
 	text-decoration: none;
 	color: black;
 		
-	font-size: 15px;
+	font-size: 20px;
 	border: 1px solid #00FF7F;
-	padding: 0.5em 1.5em;
+	padding: 0.9em 1.8em;
 	
 	
 	
@@ -2685,10 +1093,10 @@ padding: 0px;
 
 .premium {
 	text-decoration: none;
-		font-size:15px;
+		font-size:20px;
 	color: white;
 	background-color:#00FF7F ;
-	padding: 0.5em 1.5em;
+	padding: 0.9em 1.8em;
 		border: 1px solid #00FF7F;
 	
 }
@@ -2696,11 +1104,67 @@ padding: 0px;
 .pos {
 	color: red;
 }
-.eze1 {
+.pos2 {
 	color: black;
-	font-size: 15px;
+	font-size: 20px;
 }
 
+
+.grid-item-2 {
+	
+	
+	grid-column-start:3;
+grid-column-end: 5 ;
+
+grid-row-start: 1;
+grid-row-end: 5;
+
+border: none;
+
+	
+}
+
+.grid-item-2 > img {
+	width: 100%;
+	height: 100%;
+}
+
+.top-container {
+	display: grid;
+	
+	grid-gap: 20px;
+	font-size: 25px;
+	grid-template-areas: 'first second third fourth fifth sixth seventh';
+}
+
+
+.item-3 {
+	grid-area: first;
+}
+
+.item-4 {
+	grid-area: second;
+}
+
+.item-5 {
+	grid-area: third;
+}
+
+.item-6 {
+	grid-area: fourth;
+}
+
+.item-7 {
+	grid-area: fifth;
+}
+
+.item-8{
+	grid-area: sixth;
+}
+
+.item-9 {
+	grid-area: seventh;
+}
 
 
 .join {
@@ -2744,288 +1208,68 @@ padding: 0px;
 }
 .ben {
 	color: red;
-	font-size: xx-large;
+	font-size: 50px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .point {
 	color: blue;
-	font-size: xx-large;
+	font-size: 50px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .gurantee {
 	color: blue;
 	font-family: "Times New Roman", Times, serif;
-	font-size: 15px;
+	font-size: 20px;
 }
 .soft {
 	color: #00008B;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .retail {
 	color: red;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: "Arial Black", Times, serif;
 	font-style: bold;
 }
 .soft1 {
-	font-size:15px;
+	font-size:18px;
 	color: #00008B;
 	font-family: "Times New Roman", Times, serif;
 }
 
+
+.image-grid-1 {
+	padding: 10px;
+}
  
-
-.trump > .genny {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 0;
-	right:37;
-}
-.trump > .genny > img {
-	width: 180;
-	height: 180;
-}
-
-.trump > .dennis {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 260;
-	right:37;
-}
-.trump > .dennis > img {
-	width: 250;
+.image-grid-1 > img {
 	height: 150;
+	width: 250;
 }
 
-.trump > .dennis > center >  a > img {
-	width:60;
-	height:25;
+.image-gallery-1 {
 	
+	background-color: #483D8B;
 }
 
-.trump > .igwe {
-	
+.image-gallery-1 > img {
 	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top:497;
-	right:37;
-}
-.trump > .igwe > img {
-	width: 200;
-	height:150;
+	width: 100;
+	height: 100;
 }
 
-
-.trump > .palace {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 770;
-	right:37;
-}
-.trump > .palace > img {
-	width: 200;
-	height:200;
-}
-
-.trump > .device {
-	
-	padding: 10px;
-	width: 34%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	background-color: white;
-	height: auto;
-	
-	
-	position: absolute;
-	top: 1080;
-	right:37;
-}
-
-.trump > .device > a > img {
-	width: 300;
-	height:150;
-}
-
-
-.work {
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size:20px;
-}
-.work2 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-}
-.work3 {
-	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;
-	font-style: normal;
-}
-
-.work4 {
-	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;
-}
-.work5 {
-	font-size: 12px;
-	color: #00FF7F;;
-	text-decoration:underline;
-}
-
-.best{
-	color: blue;
-	font-family: "Arial Black", Times, serif;
-	font-size: 15px;
-}
-.best1 {
-	color: red;
-	font-family: "Arial Black", Times, serif;
-	font-size: 15px;
-}
-
-.best2 {
-	font-size: 10px;
-	font-family: "Times New Roman", Times, serif;
-}
-.best3 {
-	font-size: 6px;;
-}
-.best4 {
-	color: #00FF7F;
-}
-
-.pres {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: 15px;
-}
-.pres2 {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 15px;
-}
-.pres3 {
-	font-size: 10px;
-	color: #2F4F4F;
-}
-.pres4 {
-	text-decoration: underline;
-	font-size: 8px;
-}
-
-.pa {
-	font-family: "Arial Black", Times, serif;
-	color: blue;
-	font-size: 18px;
-}
-
-.pa1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size:18px;
-}
-
-.pa2 {
-	
-	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;
-	color: black;
-	}
-	
- .pa4{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-.pa5{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-.pa6{
-	
-	font-family: "Times New Roman", Times, serif;
-	font-size: 9px;
-	
-	color: #2F4F4F;
-	padding: 10px;
-	}
-
-
-.dev {
-	font-family: "Arial Black", Times, serif;
-	font-size: large;
-	color: blue;
-}
-.dev1 {
-	font-family: "Arial Black", Times, serif;
-	color: red;
-	font-size: large;
-}
-
-.dev2 {
-	
-	font-size: x-small;
-	font-family: "Times New Roman", Times, serif;
-	color: #2F4F4F;;
-	}
-	
 
 
 
 }
+
+
+
+
+
+
 
